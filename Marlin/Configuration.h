@@ -87,7 +87,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V3_0
+  #define MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B
 #endif
 
 /**
@@ -667,9 +667,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  14.72
-    #define DEFAULT_Ki   0.89
-    #define DEFAULT_Kd  61.22
+    #define DEFAULT_Kp  31.1665
+    #define DEFAULT_Ki   2.9739
+    #define DEFAULT_Kd  81.6562
   #endif
 #endif
 
@@ -752,9 +752,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 61.93
-  #define DEFAULT_bedKi 12.37
-  #define DEFAULT_bedKd 206.64
+  #define DEFAULT_bedKp 61.9300
+  #define DEFAULT_bedKi 12.3700
+  #define DEFAULT_bedKd 206.6400
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1477,7 +1477,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, -7, -3 }
+#define NOZZLE_TO_PROBE_OFFSET { -45, -7, -2.625 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1636,7 +1636,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
 #define INVERT_Y_DIR true
-#define INVERT_Z_DIR true 
+#define INVERT_Z_DIR true
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
@@ -2209,7 +2209,7 @@
 // Preheat Constants - Up to 10 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 205 
+#define PREHEAT_1_TEMP_HOTEND 205
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 

@@ -28,20 +28,20 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "KF 2.1.2"
+#define SHORT_BUILD_VERSION "RS 2.1.2"
 
 /**
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-#define DETAILED_BUILD_VERSION "Kersey Fabrications " SHORT_BUILD_VERSION
+#define DETAILED_BUILD_VERSION "Rob Sletten" SHORT_BUILD_VERSION
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "2023-01-10"
+#define STRING_DISTRIBUTION_DATE "2023-01-27"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
@@ -54,7 +54,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-#define SOURCE_CODE_URL "github.com/KerseyFabrications/Marlin"
+#define SOURCE_CODE_URL "github.com/rsletten/Marlin"
 
 /**
  * Default generic printer UUID.
